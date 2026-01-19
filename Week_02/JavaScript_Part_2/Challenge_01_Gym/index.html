@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 1</title>
+  </head>
+  <body>
+    <h1>Coding Challenge #1</h1>
+
+    <script>
+    //du lieu 1
+    //diem cua Dolphins
+    var D_S1 = 44;
+    var D_S2 = 23;
+    var D_S3 = 71;
+
+    //diem cua Kolas
+    var K_S1 = 65;
+    var K_S2 = 54;
+    var K_S3 = 49;
+
+    //du lieu 2
+    //diem cua Dolphins
+    var Do_S1 = 85;
+    var Do_S2 = 54;
+    var Do_S3 = 41;
+
+    //diem cua Kolas
+    var Ko_S1 = 23;
+    var Ko_S2 = 34;
+    var Ko_S3 = 27;
+
+
+     function calcAverage(s1,s2,s3) {
+        return (s1+s2+s3)/3;
+     }
+
+     avgDolhins = calcAverage(D_S1,D_S2,D_S3);
+     avgKoalas = calcAverage(K_S1,K_S2,K_S3);
+
+     avgDolhins2 = calcAverage(Do_S1,Do_S2,Do_S3);
+     avgKoalas2 = calcAverage(Ko_S1,Ko_S2,Ko_S3);
+
+     function checkWinner(avgDolhins, avgKoalas) {
+        if(avgDolhins > avgKoalas* 2){
+           console.log("Dolphins thang Koalas " + avgDolhins + " so voi " + avgKoalas);
+           
+        }
+        else if(avgKoalas > avgDolhins * 2){
+           console.log("Koalas thang Dolphins " + avgKoalas + " so voi " + avgDolhins);
+            
+        }else{
+            console.log("Tran dau bi bo qua");
+            
+        }
+     }
+     console.log(checkWinner(avgDolhins, avgKoalas));
+     console.log(checkWinner(avgDolhins2, avgKoalas2));
+    </script>
+  </body>
+</html>

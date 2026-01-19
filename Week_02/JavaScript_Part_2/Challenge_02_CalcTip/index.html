@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 2</title>
+  </head>
+  <body>
+    <h1>Coding Challenge #2</h1>
+
+    <script>
+        var giaTriHD = 100;
+        var bills = [125, 555, 44];
+        var tips = [];
+
+        var total = [];
+        
+
+        function calcTip(tongHD) {
+            if(tongHD > 50 && tongHD < 300){
+                return tongHD * 0.15;
+            }else{
+                return tongHD * 0.2;
+            }
+        }
+        
+        for (let index = 0; index < bills.length; index++) {
+            tips[index] = calcTip(bills[index]);
+            total[index] = tips[index] + bills[index];
+        }
+        for (let index = 0; index < bills.length; index++) {
+            console.log("Bills: " + index);
+            console.log(bills[index]);
+            console.log(tips[index]);
+            console.log(total[index]);
+        }
+        
+        
+    </script>
+  </body>
+</html>
